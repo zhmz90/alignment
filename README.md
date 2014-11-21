@@ -1,0 +1,4 @@
+alignment
+=========
+
+stat of freq
