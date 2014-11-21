@@ -5,8 +5,19 @@
 int main(){
 	
 	FILE *fp;
-	fp = fopen("test.txt","w+");
-	fprintf(fp,"%s %s %s %d","we","are","in",2012);
+	int c;
+	
+	fp = fopen("test.txt","r");
+	while(1)
+	{
+		c = fgetc(fp);
+		if (feof(fp))
+		{
+			break;
+		}
+		printf("%c",c);
+	}
+	
 	fclose(fp);
 
 	return 0;
